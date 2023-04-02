@@ -1,36 +1,54 @@
-/* 
-font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; 
-background-color: #F9F7FE;
-*/
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --heading-font-family: "Playfair Display", serif;
-  --default-font-family: "Poppins", sans-serif;
+  --branding-color: #f27a49;
+  --secondary-color: #f4f4f4;
+  --text-color: #422121;
+  --heading-font-family: "Gloock", serif;
+  --default-font-family: "Montserrat", sans-serif;
 }
 body {
   font-family: var(--default-font-family);
+  color: var(--text-color);
+}
+.navbar {
+  background-color: var(--secondary-color) !important;
+  display: flex;
+  padding: 5px;
+}
+.navbar-nav a {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 20px 20px 30px !important;
+}
+nav a:hover {
+  opacity: 0.6;
+}
+.ps-5 {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 20px !important;
 }
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  color: #272142;
+  color: var(--text-color);
   padding: 160px 0;
 }
 .hero h1 {
+  color: var(--branding-color);
   font-family: var(--heading-font-family);
   font-size: 96px;
 }
 .hero h2 {
   font-family: var(--default-font-family);
   font-weight: 400;
-  font-size: 24px;
-  line-height: 2;
+  font-size: 16px;
   margin-top: 24px;
 }
 .hero p {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 36px;
   margin: 0;
 }
@@ -41,6 +59,12 @@ body {
   padding: 12px 20px;
   background-color: var(--branding-color);
   color: white;
+  transition: all 0.25s ease-in-out;
+}
+.btn-branding:hover {
+  background-color: var(--branding-color);
+  color: white;
+  opacity: 0.8;
 }
 .btn-branding-outline {
   border-radius: 4px;
@@ -49,6 +73,11 @@ body {
   padding: 12px 20px;
   border: 1px var(--branding-color) solid;
   color: var(--branding-color);
+}
+.btn-branding-outline:hover {
+  background-color: var(--branding-color);
+  color: white;
+  border: 1px var(--branding-color) solid;
 }
 .project-description {
   padding: 120px 60px;
@@ -64,7 +93,7 @@ body {
 }
 @media (max-width: 960px) {
   .hero {
-    padding: 80px 20px;
+    padding: 100px 20px;
   }
   .hero h1 {
     font-size: 60px;
@@ -75,6 +104,10 @@ body {
   .hero p {
     font-size: 22px;
     margin: 10px;
+  }
+  .ps-5,
+  .navbar-nav a {
+    padding: 10px !important;
   }
   .project-description {
     padding: 0;
