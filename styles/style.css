@@ -84,7 +84,7 @@ nav a:hover {
   text-transform: uppercase;
 }
 .project-description {
-  padding: 25px 0px;
+  padding: 25px 10px;
 }
 .project-description h3 {
   font-family: var(--heading-font-family);
