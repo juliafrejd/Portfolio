@@ -49,8 +49,8 @@ nav a:hover {
 }
 .hero p {
   font-weight: 600;
-  font-size: 36px;
-  margin: 0;
+  font-size: 26px;
+  margin: 10px;
 }
 .btn-branding {
   border-radius: 4px;
@@ -79,12 +79,16 @@ nav a:hover {
   color: white;
   border: 1px var(--branding-color) solid;
 }
-.project-description {
-  padding: 120px 60px;
+.container h2 {
+  font-size: 28px;
+  text-transform: uppercase;
 }
-.project-description h2 {
+.project-description {
+  padding: 25px 0px;
+}
+.project-description h3 {
   font-family: var(--heading-font-family);
-  font-size: 64px;
+  font-size: 44px;
 }
 .project-description p {
   font-weight: 400;
