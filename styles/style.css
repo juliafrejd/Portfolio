@@ -9,6 +9,9 @@ body {
   font-family: var(--default-font-family);
   color: var(--text-color);
 }
+img {
+  width: 100%;
+}
 .navbar {
   background-color: var(--secondary-color) !important;
   display: flex;
@@ -83,17 +86,38 @@ nav a:hover {
   font-size: 28px;
   text-transform: uppercase;
 }
-.project-description {
+.project-description,
+.about-me-description {
   padding: 25px 10px;
 }
-.project-description h3 {
+.project-description h3,
+.about-me-description h3 {
   font-family: var(--heading-font-family);
   font-size: 44px;
 }
-.project-description p {
+.project-description p,
+.about-me-description p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  padding-right: 140px;
+}
+
+.about-landing-page {
+  padding: 160px 20px 20px 20px;
+}
+.work-inquiry {
+  text-align: right;
+  background-color: rgba(242, 122, 73, 0.1);
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 20px;
+}
+.work-inquiry h2,
+.work-inquiry p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 .footer-container .row {
   padding: 50px;
@@ -108,7 +132,7 @@ footer p {
   opacity: 0.8;
   padding-top: 20px;
 }
-@media (max-width: 960px) {
+@media (max-width: 1197px) {
   .hero {
     padding: 100px 20px;
   }
@@ -130,7 +154,43 @@ footer p {
     font-size: 42px;
     margin: 0;
   }
+  .project-description p {
+    padding: 0;
+  }
   .btn-branding-outline {
     margin: 20px;
+  }
+  .about-landing-page {
+    padding: 0px 20px;
+  }
+  .about-landing-page h3 {
+    margin-top: 20px;
+    font-size: 34px;
+  }
+  .about-landing-page .mb-4 {
+    flex-direction: column-reverse;
+    text-align: center;
+    line-height: 25px;
+    padding: 0;
+  }
+  .work-inquiry {
+    margin: 20px auto;
+    border-radius: 0px;
+    background-color: white;
+  }
+  .work-inquiry .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .work-inquiry h2,
+  .work-inquiry p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer {
+    padding: 30px;
+  }
+  footer .m-5 {
+    margin: 0 !important;
   }
 }
