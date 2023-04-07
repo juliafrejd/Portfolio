@@ -119,6 +119,19 @@ nav a:hover {
   margin: 0;
   padding: 0;
 }
+.work-container {
+  padding: 50px;
+}
+.work-container .row {
+  margin-top: 100px;
+}
+.work-container-headings {
+  margin: 50px;
+}
+.work-container-headings h2 {
+  font-family: var(--heading-font-family);
+  font-size: 44px;
+}
 .footer-container .row {
   padding: 50px;
 }
@@ -186,6 +199,24 @@ footer p {
   .work-inquiry p {
     text-align: center;
     margin-bottom: 20px;
+  }
+  .work-container {
+    padding: 50px 20px;
+  }
+  .work-container-headings {
+    margin: 0px;
+    padding: 0px;
+  }
+  .work-container .row {
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px !important;
+  }
+  .work-container-headings h2 {
+    font-size: 34px;
+  }
+  .work-container .col {
+    margin: 20px auto;
   }
   footer {
     padding: 30px;
