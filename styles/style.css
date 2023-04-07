@@ -128,9 +128,10 @@ nav a:hover {
 .work-container-headings {
   margin: 50px;
 }
-.work-container-headings h2 {
+.work-container-headings h1 {
   font-family: var(--heading-font-family);
   font-size: 44px;
+  text-transform: none;
 }
 .footer-container .row {
   padding: 50px;
@@ -212,7 +213,7 @@ footer p {
     margin: 10px;
     padding: 20px !important;
   }
-  .work-container-headings h2 {
+  .work-container-headings h1 {
     font-size: 34px;
   }
   .work-container .col {
