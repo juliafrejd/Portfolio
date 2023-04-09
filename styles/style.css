@@ -262,6 +262,13 @@ i:hover {
     margin: 0 auto;
     padding: 80px;
   }
+  .contact-container h1 {
+    font-size: 24px;
+  }
+  .contact-container h6,
+  .contact-container a {
+    font-size: 16px;
+  }
   footer {
     padding: 10px;
   }
