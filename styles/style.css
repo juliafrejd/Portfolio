@@ -15,7 +15,6 @@ img {
 .navbar {
   background-color: var(--secondary-color) !important;
   display: flex;
-  padding: 5px;
 }
 .navbar-nav a {
   color: var(--primary-color);
@@ -28,8 +27,21 @@ img {
 nav a:hover {
   opacity: 0.6;
 }
+.logo {
+  font-size: 28px;
+  font-family: var(--heading-font-family);
+  text-decoration: none;
+  color: var(--branding-color);
+  font-weight: 700;
+  padding: 0px 10px;
+  transition: 0.55s all ease-in-out;
+}
+.logo:hover {
+  rotate: 360deg;
+}
 .ps-5 {
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   text-transform: uppercase;
   padding-left: 20px !important;
 }
@@ -76,6 +88,7 @@ nav a:hover {
   padding: 12px 20px;
   border: 1px var(--branding-color) solid;
   color: var(--branding-color);
+  transition: all 0.25s ease-in-out;
 }
 .btn-branding-outline:hover {
   background-color: var(--branding-color);
