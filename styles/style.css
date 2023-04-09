@@ -133,6 +133,20 @@ nav a:hover {
   font-size: 44px;
   text-transform: none;
 }
+.contact-container {
+  padding: 150px;
+}
+.contact-container h1 {
+  font-family: var(--heading-font-family);
+}
+.contact-container h6 {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.contact-container a {
+  text-decoration: none;
+}
 .footer-container .row {
   padding: 50px;
 }
@@ -218,6 +232,9 @@ footer p {
   }
   .work-container .col {
     margin: 20px auto;
+  }
+  .contact-container {
+    text-align: center;
   }
   footer {
     padding: 30px;
