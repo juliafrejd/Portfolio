@@ -100,7 +100,8 @@ nav a:hover {
   text-transform: uppercase;
 }
 .project-description,
-.about-me-description {
+.about-me-description,
+.work-description {
   padding: 25px 10px;
 }
 .project-description h3,
@@ -109,7 +110,8 @@ nav a:hover {
   font-size: 44px;
 }
 .project-description p,
-.about-me-description p {
+.about-me-description p,
+.work-description p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -132,22 +134,22 @@ nav a:hover {
   margin: 0;
   padding: 0;
 }
-.work-container {
-  padding: 50px;
+.work-landing-page {
+  padding: 160px 160px 20px 160px;
 }
-.work-container .row {
-  margin-top: 100px;
-}
-.work-container-headings {
-  margin: 50px;
-}
-.work-container-headings h1 {
+.work-landing-page h1 {
   font-family: var(--heading-font-family);
   font-size: 44px;
   text-transform: none;
 }
+.work-container {
+  padding: 0px 160px 80px 160px;
+}
+.work-container .row {
+  margin-top: 100px;
+}
 .contact-container {
-  padding: 150px;
+  padding: 160px 20px;
 }
 .contact-container h1 {
   font-family: var(--heading-font-family);
@@ -239,12 +241,14 @@ i:hover {
     text-align: center;
     margin-bottom: 20px;
   }
+  .work-landing-page {
+    padding: 50px 20px 20px 20px;
+  }
+  .work-landing-page h1 {
+    font-size: 34px;
+  }
   .work-container {
     padding: 50px 20px;
-  }
-  .work-container-headings {
-    margin: 0px;
-    padding: 0px;
   }
   .work-container .row {
     flex-direction: column;
