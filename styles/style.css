@@ -165,13 +165,24 @@ nav a:hover {
 }
 footer {
   background-color: var(--secondary-color);
-  padding: 20px 0;
+  padding: 15px 0;
   margin: 0;
 }
 footer p {
   font-size: 12px;
   opacity: 0.8;
   padding-top: 20px;
+}
+i {
+  color: var(--branding-color);
+  padding: 35px 21px;
+  background-color: white;
+  border-radius: 100%;
+  transition: 0.35s all ease-in-out;
+}
+i:hover {
+  color: white;
+  background-color: var(--branding-color);
 }
 @media (max-width: 1197px) {
   .hero {
@@ -202,7 +213,7 @@ footer p {
     margin: 20px;
   }
   .about-landing-page {
-    padding: 0px 20px;
+    padding: 20px 20px;
   }
   .about-landing-page h3 {
     margin-top: 20px;
@@ -248,11 +259,20 @@ footer p {
   }
   .contact-container {
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
   }
   footer {
-    padding: 30px;
+    padding: 10px;
+  }
+  footer h2 {
+    font-size: 20px !important;
   }
   footer .m-5 {
-    margin: 0 !important;
+    padding: 10px !important;
+    margin: 20px 0px !important;
+  }
+  i {
+    margin-top: 10px;
   }
 }
